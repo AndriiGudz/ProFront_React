@@ -1,5 +1,7 @@
 .homework-02 {
     display: flex;
+    justify-content: center;
+    flex: 1;
     gap: 20px;
     margin: 20px;
 }
