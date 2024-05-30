@@ -1,0 +1,6 @@
+.homework-03 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 50px;
+}
