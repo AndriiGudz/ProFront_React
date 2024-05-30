@@ -10,6 +10,7 @@ function Input({ name, type, placeholder, label }) {
       )}
       <input
         className="input-field"
+        id={name}
         name={name}
         type={type}
         placeholder={placeholder}
