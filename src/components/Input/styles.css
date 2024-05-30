@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+.input-field::placeholder {
+  color: #9a9a9a;
+}
+
 .input-container {
   /* margin-bottom: 15px; */
   display: flex;

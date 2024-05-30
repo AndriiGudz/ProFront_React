@@ -36,15 +36,22 @@ import './styles.css'
 // function Button(props)
 // function Button({name = 'Get', isPrimary = true}) {
 //   const buttonClass = isPrimary ? 'primary-buttom' : 'delete-buttom'
-  // const buttonClass = props.isPrimary ? 'primary-buttom' : 'delete-buttom'
-  // console.log(props);
+// const buttonClass = props.isPrimary ? 'primary-buttom' : 'delete-buttom'
+// console.log(props);
 
 //   return <button className={`button-component ${buttonClass}`}>{name}</button>
 // }
 
-function Button({name, type}) {
-  
-  return <button className="btn-component" type={type}>{name}</button>
+function Button({ name, type = 'button', onClick }) {
+  return (
+    <button
+      className="btn-component"
+      type={type}
+      onClick={onClick}
+    >
+      {name}
+    </button>
+  )
 }
 
 export default Button
