@@ -34,12 +34,17 @@ import './styles.css'
 // Вариант 4
 
 // function Button(props)
-function Button({name = 'Get', isPrimary = true}) {
-  const buttonClass = isPrimary ? 'primary-buttom' : 'delete-buttom'
+// function Button({name = 'Get', isPrimary = true}) {
+//   const buttonClass = isPrimary ? 'primary-buttom' : 'delete-buttom'
   // const buttonClass = props.isPrimary ? 'primary-buttom' : 'delete-buttom'
   // console.log(props);
 
-  return <button className={`button-component ${buttonClass}`}>{name}</button>
+//   return <button className={`button-component ${buttonClass}`}>{name}</button>
+// }
+
+function Button({name, type}) {
+  
+  return <button className="btn-component" type={type}>{name}</button>
 }
 
 export default Button
